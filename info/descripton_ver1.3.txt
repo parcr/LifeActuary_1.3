@@ -1,0 +1,15 @@
+Life Actuary 1.3
+- We changed the class annuities.py and now all the life annuity functions do not rely on the computation of the actuarial table. The old functions are still available in commutationtable.py
+- We developed a new class mortality_insurance.py where functions for evaluating life insurance contracts are available
+without the need to compute the commutation table. The old functions are still available in commutationtable.py
+- We developed a new class for evaluating annuities and life insurance for groups of two individuals, for joint-life and last-survivor methods.
+- We made a small correction to the function "present_value" and a large correction to the functions t_nIArx and t_nIArx_ in commutation_table.py.
+- We made a small correction to the function "get_integral_px_method" in mortality_table.py.
+- We made a small correction to the function "annuity_x" in annuities.py.
+- We made a small correction to the npx and nqx functions in the module mortality_table.py, when producing the fractional commutation tables using the Balducci and the Constante Mortality Force
+
+
+Life Actuary 1.2
+- We add the valuations for two heads, considering independence, and the status of either "joint-life" or "last-survivor"
+- We update the function t_nqx in the core module "mortality_table" so that either negative ages or periods can't be passed.
+- We made a correction to the Balducci approximation.
